@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #3c96ed;
+}
+
+body {
+  background-color: #fafafa;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  width: 800px;
+}
+
+.column {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.left {
+  background-image: url(assets/main-foto.png);
+  background-size: 450px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+}
+
+.right {
+  padding-left: 20px;
+}
+
+.login-panel {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  justify-items: center;
+  width: 175px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgb(236, 236, 234);
+  width: 320px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+input[type="password"] {
+  margin-top: 8px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: rgb(164, 164, 165);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #a1a1a1;
+}
+
+input[type="submit"] {
+  background-color: #3c96ed;
+  font-size: 18px;
+  margin-top: 8px;
+  border-radius: 5px;
+  width: 320px;
+  padding: 5px;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create {
+  background-color: #fff;
+  margin-top: 10px;
+  border: 1px solid rgb(236, 236, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create a {
+  margin-left: 5px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.create-download p {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.app-store img {
+  width: 150px;
+  margin-left: 10px;
+}
+
+.app-store {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
