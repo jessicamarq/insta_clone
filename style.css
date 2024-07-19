@@ -141,10 +141,9 @@ input[type="submit"] {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
+  text-align: center;
+  height: 50px;
+  margin-top: -50px;
 }
 
 footer a {
@@ -154,11 +153,12 @@ footer a {
 }
 
 footer p {
-  margin-left: 20px;
-  margin-bottom: 2.5px;
-  font-size: 12px;
+  display: inline-block;
+  font-size: 14px;
   font-weight: bold;
   color: grey;
+  text-transform: uppercase;
+  padding-left: 20px;
 }
 
 #container-signup {
@@ -208,4 +208,48 @@ footer p {
   height: 1px;
   background-color: #e6e6e6;
   width: 35%;
+}
+
+@media (max-width: 850px) {
+  .left {
+    display: none;
+  }
+
+  #container {
+    max-width: 90%;
+  }
+
+  #container-signup {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .message {
+    font-size: 14px;
+    margin: 5px 40px;
+  }
+
+  .cta-button {
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  footer a {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
